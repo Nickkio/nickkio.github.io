@@ -2,7 +2,7 @@
 layout: default
 ---
 
-##My Art
+## My Art
 
 I drew this yesterday.
 
