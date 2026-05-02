@@ -15,8 +15,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Hello
-          <a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
 
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
@@ -30,6 +29,8 @@
 
         {% if site.github.is_user_page %}
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        <p class="contact0"><a href="mailto:gabrielanicoler@gmail.com">Contact my personal account</a></p>
+        <p class="contact1"><a href="mailto:grivera29@amherst.edu">Contact my student account</a></p>
         {% endif %}
 
         {% if site.show_downloads %}
@@ -41,9 +42,12 @@
         {% endif %}
       </header>
       <section>
+        <h1>About me</h1>
+        Hello, my name is Gaby Rivera. I'm a Class of 2029 student. I'm currently studying Computer Science at Amherst College with an interest in also majoring in Japanese.
 
-      Hello, my name is Gaby Rivera. I'm currently studying Computer Science at Amherst College with an interest in also majoring in Japanese.
+        I enjoy to do a lot of things, so this website will work as a hub where I can document my academic, professional, and personal journey.
 
+        Feel free to look around and explore!
       </section>
       <footer>
         {% if site.github.is_project_page %}
