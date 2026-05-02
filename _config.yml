@@ -8,3 +8,4 @@ title: "Gaby/Nick's Digital Portofolio"
 description: "Check out what I've been working on!"
 
 show_downloads: false
+google_analytics: _includes/head-custom-google-analytics.html
