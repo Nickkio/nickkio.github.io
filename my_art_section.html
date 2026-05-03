@@ -1,15 +1,33 @@
----
-layout: default
----
-<link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Art Section</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    {% include head-custom.html %}
-<h1>My Art Section</h1>
-<p>Your HTML content goes here after the front matter.</p>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="/">My Website</a></h1>
+        <p class="view"><a href="./">Back to Home</a></p>
+      </header>
+      <section>
+        <h1>My Art Section</h1>
+        <p>Welcome to my art gallery! Here you'll find my creative works.</p>
 
-<div class="art-gallery">
-  <img src="image.jpg" alt="Art piece 1">
-  <img src="image2.jpg" alt="Art piece 2">
-</div>
+        <div class="art-gallery">
+          <img src="image.jpg" alt="Art piece 1">
+          <img src="image2.jpg" alt="Art piece 2">
+        </div>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages</small></p>
+      </footer>
+    </div>
+  </body>
+</html>
