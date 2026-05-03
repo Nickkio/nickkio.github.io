@@ -6,4 +6,4 @@ layout: default
 
 I drew this yesterday.
 
-[back](./)
+[back](default.html)
