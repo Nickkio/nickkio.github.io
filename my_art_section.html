@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+<link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    {% include head-custom.html %}
 <h1>My Art Section</h1>
 <p>Your HTML content goes here after the front matter.</p>
 
