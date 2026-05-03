@@ -21,57 +21,9 @@
         <p>Welcome to the coding section! Here you'll find my projects and ideas.</p>
         <div class="coding_section">
           <div class="language-j">
-            <h2>#1 </h2> <h2>Dictionary Anagram Helper Methods (5/1/26)</h2>
+            <h2>#1 Dictionary Anagram Helper Methods (5/1/26)</h2>
             <code>
-              public static boolean isAnagram(String userAnagram, String currentWord){
-              if(currentWord.equalsIgnoreCase(rearranger(currentWord, userAnagram))){
-              return true;
-              }
-              return false;
-              }
-              public static String rearranger(String currentWord, String userAnagram){
-              String rearranged = userAnagram;
-              for(int index = 0; index < currentWord.length(); index++){
-              String wordAtLetter = String.valueOf(currentWord.charAt(index));
-              if (String.valueOf(rearranged.charAt(index)).equalsIgnoreCase(wordAtLetter)) {//Checks if the rearranged variable letter equals to the word's
-                continue;
-                }
-            int answerLetterIndex = findIndex(rearranged, wordAtLetter); //Finds where the "word's" letter is found in the "answer's" word
-            if(answerLetterIndex != -1){
-            ArrayList<String> rearrangedArray = stringToArray(rearranged);// Turns the word into an array
-            String answerAtLetter = String.valueOf(rearranged.charAt(index));
-
-                rearrangedArray.set(index, wordAtLetter); //Sets the index where it's at to the word letter
-                rearrangedArray.set(answerLetterIndex, answerAtLetter); //Sets the index where the word letter was found to the letter that's being swapped
-
-                rearranged = arrayToString(rearrangedArray);
-            }
-        }
-        return rearranged;
-    }
-    public static int findIndex(String word, String letter){
-        for(int i = 0; i < word.length(); i++){
-            if(String.valueOf(word.charAt(i)).equalsIgnoreCase(letter)){
-                return i;
-            }
-        }
-        return -1;
-    }
-    public static ArrayList<String> stringToArray(String word){//Breaks a word into letters, making it an array
-        ArrayList<String> wordArray = new ArrayList<>();
-        for(int i = 0; i < word.length(); i++){
-            wordArray.add(i, String.valueOf(word.charAt(i)));
-        }
-        return wordArray;
-    }
-    public static String arrayToString(ArrayList<String> array){
-        String stringForm = "";
-        int length = array.size();
-        for(int i = 0; i < length; i++){
-            stringForm += array.get(i);
-        }
-        return stringForm;
-    }
+              This is an example of code.
             </code>
           </div>
         </div>
